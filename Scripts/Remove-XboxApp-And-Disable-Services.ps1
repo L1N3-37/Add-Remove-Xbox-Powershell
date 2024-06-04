@@ -1,47 +1,32 @@
-# Instruction
-Write-Host "`n--> Removing Xbox App..."
+Write-Host "`n--> Removing Xbox App..."                                                                  # Instruction
 
-# Remove Xbox App
-Get-AppxPackage Microsoft.GamingApp | Remove-AppxPackage
+Get-AppxPackage Microsoft.GamingApp | Remove-AppxPackage                                                 # Remove Xbox App
 
-# Instruction
-Write-Host "`n--> Removing Xbox Identity Provider..."
+Write-Host "`n--> Removing Xbox Identity Provider..."                                                    # Instruction
 
-# Remove Xbox Identity Provider
-Get-AppxPackage Microsoft.XboxIdentityProvider | Remove-AppxPackage
+Get-AppxPackage Microsoft.XboxIdentityProvider | Remove-AppxPackage                                      # Remove Xbox Identity Provider
 
-# Instruction
-Write-Host "`n--> Removing Xbox Speech to Text Overlay..."
+Write-Host "`n--> Removing Xbox Speech to Text Overlay..."                                               # Instruction
 
-# Remove Xbox Speech to Text Overlay
-Get-AppxPackage Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage
+Get-AppxPackage Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage                                   # Remove Xbox Speech to Text Overlay
 
-# Instruction
-Write-Host "`n--> Removing Xbox Game Overlay..."
+Write-Host "`n--> Removing Xbox Game Overlay..."                                                         # Instruction
 
-# Remove Xbox Game Overlay
-Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage
+Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage                                           # Remove Xbox Game Overlay
 
-# Instruction
-Write-Host "`n--> Removing Xbox Game Callable UI..."
+Write-Host "`n--> Removing Xbox Game Callable UI..."                                                     # Instruction
 
-# Remove Xbox Game Callable UI
-Get-AppxPackage Microsoft.Xbox.TCUI | Remove-AppxPackage
+Get-AppxPackage Microsoft.Xbox.TCUI | Remove-AppxPackage                                                 # Remove Xbox Game Callable UI
 
-# Instruction
-Write-Host "`n--> Removing Xbox Gaming Overlay (another possible package name)..."
+Write-Host "`n--> Removing Xbox Gaming Overlay (another possible package name)..."                       # Instruction
+    
+Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage                                         # Remove Xbox Gaming Overlay (another possible package name)
 
-# Remove Xbox Gaming Overlay (another possible package name)
-Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage
+Write-Host "`n--> Removing Xbox Game Bar Plugin (another possible package name)..."                      # Instruction
 
-# Instruction
-Write-Host "`n--> Removing Xbox Game Bar Plugin (another possible package name)..."
+Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage                                           # Remove Xbox Game Bar Plugin
 
-# Remove Xbox Game Bar Plugin
-Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage
-
-# Instruction
-Write-Host "`n--> Disabling Xbox Services..."
+Write-Host "`n--> Disabling Xbox Services..."                                                            # Instruction
 
 # Disable Xbox Services
 $services = @(
@@ -58,8 +43,6 @@ foreach ($service in $services) {
     }
 }
 
-# Separation line
-Write-Host "`n---------------------------------------------------"
+Write-Host "`n---------------------------------------------------"                                       # Separation line
 
-# Instruction
-Read-Host "`n Completed! Press any key to close the Terminal"
+Read-Host "`n Completed! Press any key to close the Terminal"                                            # Instruction
