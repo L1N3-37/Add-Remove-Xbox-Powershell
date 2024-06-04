@@ -1,13 +1,29 @@
-Clear-Host                                                                                    # Clear the terminal before execution
+# Clear the terminal before execution
+Clear-Host
 
-Write-Host "`n--> Enabling Xbox Services..."                                                  # Instruction
+# Tag
+Write-Host " _______________________________________ 
+|					|
+|    _    _  _ _  ____      ____ ___ 	|
+|   | |  / || \ |<__ / ___ <__ /|_  |   |
+|   | |_ | ||   | <_ \|___| <_ \ / / 	|
+|   |___||_||_\_|<___/     <___//_/   	|
+| 					|
+|_______________________________________|
+| 					|
+|     https://github.com/L1N3-37        |
+|_______________________________________|"
+
+# Instruction
+Write-Host "`n| --> Enabling Xbox Services..."
+Start-Sleep -Seconds 1
 
 # Enable Xbox Services
 $services = @(
-"XboxGipSvc",				                                                                  # Xbox Accessory Management Service
-"XboxNetApiSvc",			                                                                  # Xbox Live Networking Service
-"GamingServices",			                                                                  # Gaming Services
-"GamingServicesNet"			                                                                  # Gaming Services Network
+"XboxGipSvc",				# Xbox Accessory Management Service
+"XboxNetApiSvc",			# Xbox Live Networking Service
+"GamingServices",			# Gaming Services
+"GamingServicesNet"			# Gaming Services Network
 )
 
 foreach ($service in $services) {
@@ -16,16 +32,20 @@ foreach ($service in $services) {
         Set-Service -Name $_.Name -StartupType Automatic -ErrorAction SilentlyContinue
     }
 }
-
-Write-Host "`n--> Opening the Xbox App page in Microsoft Store..."                            # Instruction
+# Instruction
+Write-Host "`n| --> Opening the Xbox App page in Microsoft Store..."
 Start-Sleep -Seconds 1
 
-$storeApp = "ms-windows-store://pdp/?productid=9MV0B5HZVK9Z"                                  # Open Microsoft Store   
-Start $storeApp
-
-Write-Host "`n--> Click the -[ Install ]- button when prompted"                               # Instruction
+# Instruction
+Write-Host "`n| --> Click the -[ Install ]- button when prompted"
 Start-Sleep -Seconds 2
 
-Write-Host "`n---------------------------------------------------"                            # Separation line
+# Open Microsoft Store
+$storeApp = "ms-windows-store://pdp/?productid=9MV0B5HZVK9Z"
+Start $storeApp
 
-Read-Host "`n Completed! Press any key to close the Terminal"                                 # Instruction
+# Separation line
+Write-Host "`n---------------------------------------------------"
+
+# Instruction
+Read-Host "`n Completed! Press any key to close the Terminal"

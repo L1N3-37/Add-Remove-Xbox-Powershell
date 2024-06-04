@@ -1,32 +1,63 @@
-Write-Host "`n--> Removing Xbox App..."                                                                  # Instruction
+# Clear the terminal before execution
+Clear-Host
 
-Get-AppxPackage Microsoft.GamingApp | Remove-AppxPackage                                                 # Remove Xbox App
+# Tag
+Write-Host " _______________________________________ 
+|					|
+|    _    _  _ _  ____      ____ ___ 	|
+|   | |  / || \ |<__ / ___ <__ /|_  |   |
+|   | |_ | ||   | <_ \|___| <_ \ / / 	|
+|   |___||_||_\_|<___/     <___//_/   	|
+| 					|
+|_______________________________________|
+| 					|
+|     https://github.com/L1N3-37        |
+|_______________________________________|"
 
-Write-Host "`n--> Removing Xbox Identity Provider..."                                                    # Instruction
+# Instruction
+Write-Host "`n| --> Removing Xbox App..."
 
-Get-AppxPackage Microsoft.XboxIdentityProvider | Remove-AppxPackage                                      # Remove Xbox Identity Provider
+# Remove Xbox App
+Get-AppxPackage Microsoft.GamingApp | Remove-AppxPackage
 
-Write-Host "`n--> Removing Xbox Speech to Text Overlay..."                                               # Instruction
+# Instruction
+Write-Host "`n| --> Removing Xbox Identity Provider..."
 
-Get-AppxPackage Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage                                   # Remove Xbox Speech to Text Overlay
+# Remove Xbox Identity Provider
+Get-AppxPackage Microsoft.XboxIdentityProvider | Remove-AppxPackage
 
-Write-Host "`n--> Removing Xbox Game Overlay..."                                                         # Instruction
+# Instruction
+Write-Host "`n| --> Removing Xbox Speech to Text Overlay..."
 
-Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage                                           # Remove Xbox Game Overlay
+# Remove Xbox Speech to Text Overlay
+Get-AppxPackage Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage
 
-Write-Host "`n--> Removing Xbox Game Callable UI..."                                                     # Instruction
+# Instruction
+Write-Host "`n| --> Removing Xbox Game Overlay..."
 
-Get-AppxPackage Microsoft.Xbox.TCUI | Remove-AppxPackage                                                 # Remove Xbox Game Callable UI
+# Remove Xbox Game Overlay
+Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage
 
-Write-Host "`n--> Removing Xbox Gaming Overlay (another possible package name)..."                       # Instruction
-    
-Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage                                         # Remove Xbox Gaming Overlay (another possible package name)
+# Instruction
+Write-Host "`n| --> Removing Xbox Game Callable UI..."
 
-Write-Host "`n--> Removing Xbox Game Bar Plugin (another possible package name)..."                      # Instruction
+# Remove Xbox Game Callable UI
+Get-AppxPackage Microsoft.Xbox.TCUI | Remove-AppxPackage
 
-Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage                                           # Remove Xbox Game Bar Plugin
+# Instruction
+Write-Host "`n| --> Removing Xbox Gaming Overlay (another possible package name)..."
 
-Write-Host "`n--> Disabling Xbox Services..."                                                            # Instruction
+# Remove Xbox Gaming Overlay (another possible package name)
+Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage
+
+# Instruction
+Write-Host "`n| --> Removing Xbox Game Bar Plugin (another possible package name)..."
+
+# Remove Xbox Game Bar Plugin
+Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage
+
+# Instruction
+Write-Host "`n| --> Disabling Xbox Services..."
 
 # Disable Xbox Services
 $services = @(
@@ -43,6 +74,8 @@ foreach ($service in $services) {
     }
 }
 
-Write-Host "`n---------------------------------------------------"                                       # Separation line
+# Separation line
+Write-Host "`n----------------------------------------"
 
-Read-Host "`n Completed! Press any key to close the Terminal"                                            # Instruction
+# Instruction
+Read-Host "`nCompleted! Press any key to close the Terminal"
