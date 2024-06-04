@@ -1,15 +1,13 @@
-# Clear the terminal before execution
-Clear-Host
+Clear-Host                                                                                    # Clear the terminal before execution
 
-# Instruction
-Write-Host "`n--> Enabling Xbox Services..."
+Write-Host "`n--> Enabling Xbox Services..."                                                  # Instruction
 
 # Enable Xbox Services
 $services = @(
-"XboxGipSvc",				# Xbox Accessory Management Service
-"XboxNetApiSvc",			# Xbox Live Networking Service
-"GamingServices",			# Gaming Services
-"GamingServicesNet"			# Gaming Services Network
+"XboxGipSvc",				                                                                  # Xbox Accessory Management Service
+"XboxNetApiSvc",			                                                                  # Xbox Live Networking Service
+"GamingServices",			                                                                  # Gaming Services
+"GamingServicesNet"			                                                                  # Gaming Services Network
 )
 
 foreach ($service in $services) {
@@ -18,20 +16,16 @@ foreach ($service in $services) {
         Set-Service -Name $_.Name -StartupType Automatic -ErrorAction SilentlyContinue
     }
 }
-# Instruction
-Write-Host "`n--> Opening the Xbox App page in Microsoft Store..."
+
+Write-Host "`n--> Opening the Xbox App page in Microsoft Store..."                            # Instruction
 Start-Sleep -Seconds 1
 
-# Open Microsoft Store
-$storeApp = "ms-windows-store://pdp/?productid=9MV0B5HZVK9Z"
+$storeApp = "ms-windows-store://pdp/?productid=9MV0B5HZVK9Z"                                  # Open Microsoft Store   
 Start $storeApp
 
-# Instruction
-Write-Host "`n--> Click the -[ Install ]- button when prompted"
+Write-Host "`n--> Click the -[ Install ]- button when prompted"                               # Instruction
 Start-Sleep -Seconds 2
 
-# Separation line
-Write-Host "`n---------------------------------------------------"
+Write-Host "`n---------------------------------------------------"                            # Separation line
 
-# Instruction
-Read-Host "`n Completed! Press any key to close the Terminal"
+Read-Host "`n Completed! Press any key to close the Terminal"                                 # Instruction
