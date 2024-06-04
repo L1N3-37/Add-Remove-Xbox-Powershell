@@ -1,9 +1,9 @@
  _______________________________________ 
 |				        |    PowerShell scripts designed 
-|    _    _  _ _  ____      ____ ___ 	|    to help users manage
-|   | |  / || \ |<__ / ___ <__ /|_  |   |    Xbox services along
-|   | |_ | ||   | <_ \|___| <_ \ / / 	|    with the Xbox app
-|   |___||_||_\_|<___/     <___//_/   	|    on their Windows machines.
+|    _    _  _ _  ____      ____ ___ 	|    to help users manage Xbox
+|   | |  / || \ |<__ / ___ <__ /|_  |   |     services along with
+|   | |_ | ||   | <_ \|___| <_ \ / / 	|     the Xbox app on
+|   |___||_||_\_|<___/     <___//_/   	|     their Windows machines.
 | 					|
 |_______________________________________|
 
