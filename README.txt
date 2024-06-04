@@ -1,4 +1,4 @@
-# PowerShell scripts designed to help users manage Xbox services and the Xbox app on their Windows machines.
+PowerShell scripts designed to help users manage Xbox services and the Xbox app on their Windows machines.
 -  Install-XboxApp-And-Enable-Services.ps1
   
 This PowerShell script is designed to enable Xbox-related services on a Windows machine and open the Xbox app's Microsoft Store page, allowing users to easily install the app. Key actions performed by this script include:
