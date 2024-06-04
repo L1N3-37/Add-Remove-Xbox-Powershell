@@ -30,3 +30,6 @@ Start-Sleep -Seconds 1
 # Open Microsoft Store
 $storeApp = "ms-windows-store://pdp/?productid=9MV0B5HZVK9Z"
 Start $storeApp
+
+# Instruction
+Write-Host "Completed! You may close your Terminal."
