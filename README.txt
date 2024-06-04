@@ -1,3 +1,12 @@
+ _______________________________________ 
+|										                    |
+|    _    _  _ _  ____      ____ ___ 	  |
+|   | |  / || \ |<__ / ___ <__ /|_  |   |
+|   | |_ | ||   | <_ \|___| <_ \ / / 	  |
+|   |___||_||_\_|<___/     <___//_/   	|
+| 										                  |
+|_______________________________________|
+
 PowerShell scripts designed to help users manage Xbox services along with the Xbox app on their Windows machines.
 
 -->  Install-XboxApp-And-Enable-Services.ps1
