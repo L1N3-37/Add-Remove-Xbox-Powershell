@@ -67,4 +67,4 @@ foreach ($service in $services) {
 }
 
 # Instruction
-Write-Host "Completed! You may close your Terminal."
+Read-Host -promt "Completed! Press any key to close the Terminal."
