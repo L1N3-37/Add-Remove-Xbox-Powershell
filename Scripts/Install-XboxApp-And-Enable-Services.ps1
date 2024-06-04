@@ -32,4 +32,4 @@ $storeApp = "ms-windows-store://pdp/?productid=9MV0B5HZVK9Z"
 Start $storeApp
 
 # Instruction
-Write-Host "Completed! You may close your Terminal."
+Read-Host -promt "Completed! Press any key to close the Terminal."
