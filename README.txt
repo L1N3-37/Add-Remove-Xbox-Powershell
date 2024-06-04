@@ -17,3 +17,6 @@ Informing users about the script's actions through clear and concise instruction
 Removing various Xbox app components such as Xbox Identity Provider, Xbox Speech to Text Overlay, Xbox Game Overlay, Xbox Game Callable UI, and other related packages.
 Guiding users through the removal process and confirming the completion of the script.
 This script simplifies the process of disabling Xbox services and uninstalling the Xbox app and its components from a Windows machine.
+
+Made by - L1N3-37
+Github - https://github.com/L1N3-37
