@@ -7,6 +7,9 @@
 | 					|
 |_______________________________________|
 
+![image](https://github.com/L1N3-37/Add-Remove-Xbox-Powershell/assets/44227327/ff06c2eb-9554-4adb-88ba-c71fc4ce2e95)
+![image](https://github.com/L1N3-37/Add-Remove-Xbox-Powershell/assets/44227327/7fbc655b-a5ab-4964-8fd4-be8380bfef4e)
+
 -->  Install-XboxApp-And-Enable-Services.ps1
   
 This PowerShell script is designed to enable Xbox-related services on a Windows machine and open the Xbox app's Microsoft Store page, allowing users to easily install the app. Key actions performed by this script include:
